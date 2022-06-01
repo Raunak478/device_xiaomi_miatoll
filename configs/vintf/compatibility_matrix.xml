@@ -58,12 +58,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="false">
-        <name>android.hidl.memory</name>
-        <version>1.0</version>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.graphics.mapper</name>
+        <version>4.0</version>
         <interface>
             <name>IMapper</name>
-            <instance>ashmem</instance>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="false">
