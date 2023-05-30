@@ -168,10 +168,6 @@ BOARD_USES_METADATA_PARTITION := true
 
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-# Power
-TARGET_POWERHAL_BOOST_EXT := $(DEVICE_PATH)/power/boost-ext.cpp
-TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/mode-ext.cpp
-
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop
