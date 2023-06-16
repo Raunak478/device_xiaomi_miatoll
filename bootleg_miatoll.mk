@@ -16,7 +16,7 @@
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -25,12 +25,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := lineage_miatoll
+# Maintainer Prop
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.bootleggers.maintainer=codedrex
+
+
+PRODUCT_NAME := bootleg_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := SM6250
 PRODUCT_MANUFACTURER := Xiaomi
 
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
